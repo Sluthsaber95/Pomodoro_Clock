@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+}
+
+.set-up-btn {
+    color: white;
+    background-color: transparent;
+    padding: 0;
+    border: 0;
+}
+
+.inc-btn {
+    font-size: 2em;
+}
+
+.dec-btn {
+    font-size: 3em;
+}
+
+.title-layout {
+    font-size: 1.6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    height: 50px;
+    width: 200px;
+}
+
+.btn-layout {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+}
+
+.bottom-btn {
+    font-size: 2em;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0;
+    background-color: black;
+    color: white;
+}
+
+#top-title {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 100px;
+    width: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#top-toggle {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 100px;
+    width: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#break-number {
+    font-size: 3em;
+    color: white;
+}
+
+#session-number {
+    font-size: 3em;
+    color: white;
+}
+
+#bottom-setting {
+    height: 50px;
+    width: 500px;
+    background-color: black;
+}
+
+#timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 495px;
+    width: 495px;
+    border-radius: 50%;
+    font-size: 3.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+#start {
+    position: absolute;
+    top: 10em;
+}
+
+#pause {
+    position: absolute;
+    top: 10em;
+}
+
+#stop {
+    position: absolute;
+    top: 10em;
+}
+
+#bottom-setting {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100px;
+}
+
+#restart {
+    width: 120px;
+}
+
+#time-ring {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    /* background-image:
+    linear-gradient( 90deg, rgb(0, 249, 255) 50%, transparent 50%), linear-gradient(90deg, transparent 50%, rgb(0, 249, 255) 50%); */
+    /* linear-gradient( 90deg, transparent 50%, black 50%), linear-gradient(270deg, black 50%, rgb(0, 249, 255) 50%); */
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
