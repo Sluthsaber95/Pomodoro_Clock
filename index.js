@@ -26,10 +26,10 @@ const incMinuteWork = document.getElementById("inc-minute-session");
 const breakAudio = new Audio('zapsplat_cartoon_ascend_x4_short_002_12650.mp3');
 const alarmAudio = new Audio('zapsplat_household_clock_alarm_digital_beep_long.mp3')
 
-let globalTime = 5;
+let globalTime = 25 * 60;
 let originalTime = globalTime;
 
-let breakTime = 5;
+let breakTime = 15 * 60;
 let setBreakTime = breakTime;
 
 let interval;
@@ -114,11 +114,7 @@ const ringClock = (color) => {
     }
 }
 
-const time = (timeType) => { // pass in clock object -> render time on screen
-    console.log("globalTime : " + globalTime)
-    console.log("breakTime : " + breakTime)
-    console.log(deg);
-    // need separate time objects
+const time = (timeType) => {
     switch (timeType) {
         case "session":
             clock = transcribeToClock(globalTime);
